@@ -114,4 +114,13 @@ class NutrientControl extends Model implements HasMedia
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    public static function boot() {
+        parent::boot();
+        static::creating(function($model) {
+            $model->number = NutrientControl::whereYear('created_at', Carbon::now()->year)->where('team_id', $model->team_id)->max('number') + 1; // start from 1 every year
+            $model->code = 'NCO' . str_pad($model->number, 5, '0', STR_PAD_LEFT)
+            ;
+        });
+    }
 }
