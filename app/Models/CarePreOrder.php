@@ -154,4 +154,13 @@ class CarePreOrder extends Model implements HasMedia
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    public static function boot() {
+        parent::boot();
+        static::creating(function($model) {
+            $model->number = CarePreOrder::whereYear('created_at', Carbon::now()->year)->where('team_id', $model->team_id)->max('number') + 1; // start from 1 every year
+            $model->code = 'CPO' . str_pad($model->number, 5, '0', STR_PAD_LEFT)
+            ;
+        });
+    }
 }

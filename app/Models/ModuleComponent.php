@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Carbon\Carbon;
 
 class ModuleComponent extends Model implements HasMedia
 {
@@ -90,5 +91,14 @@ class ModuleComponent extends Model implements HasMedia
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');
+    }
+
+    public static function boot() {
+        parent::boot();
+        static::creating(function($model) {
+            $model->number = ModuleComponent::whereYear('created_at', Carbon::now()->year)->where('team_id', $model->team_id)->max('number') + 1; // start from 1 every year
+            $model->code = 'MCP' . str_pad($model->number, 4, '0', STR_PAD_LEFT)
+            ;
+        });
     }
 }
