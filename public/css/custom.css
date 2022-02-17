@@ -130,3 +130,351 @@ table.dataTable thead .sorting_desc {
 .custom-select.form-control-sm {
     padding: 0.25rem 1.5rem;
 }
+
+/* custom */
+body {
+    font-size: 0.856rem;
+    font-weight: 500;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.menu-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #eeeeee;
+}
+
+.c-header-nav .fa-circle {
+    color: #f3f3f3;
+}
+
+.c-header-nav .fa-calendar,
+.c-header-nav .fa-bullhorn,
+.c-header-nav .fa-bell {
+    /*color: #2eb85c;*/
+    color: #321fdb;
+}
+
+.c-header-nav .fa-user {
+    color: #ccc;
+}
+
+.c-header-nav .fa-calendar:hover,
+.c-header-nav .fa-bullhorn:hover,
+.c-header-nav .fa-bell:hover {
+    color: #39f;
+}
+
+.c-header-nav .fa-user:hover {
+    color: #aaa;
+}
+
+.c-main {
+    padding-top: 1rem;
+}
+
+.c-body {
+    /*background-color: #f8f8f8;*/
+    background-color: #fff;
+}
+
+.nav-table {
+    margin-bottom: 10px;
+}
+
+.nav-table .c-header {
+    background-color: transparent;
+    border-bottom: 0;
+}
+
+.nav-table .btn,
+.form-group .btn,
+.card-header span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.c-header-nav-item .btn-default {
+    color: #321fdb;
+    background-color: #E8EAF6;
+}
+
+.dt-buttons {
+    margin-left: 2rem;
+}
+
+.dt-buttons .buttons-html5,
+.dt-buttons .buttons-colvis {
+    color: #555;
+    font-size: .675rem;
+}
+
+.btn,
+.dt-buttons .btn {
+    border-radius: 10px;
+}
+
+.card {
+    border: 0;
+}
+
+.c-main > .container-fluid > .card > .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_filter label {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.is-problem-routine a,
+.is-problem-important a,
+.is-problem-urgent a,
+.is-problem-critical a,
+.is-problem-emergency a,
+.is-active a,
+.is-done a {
+    color: #fff!important;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: .8rem;
+}
+
+.is-problem-routine a,
+.is-active a,
+.is-done a {
+    background-color: #66BB6A;
+}
+.is-problem-important a,
+.is-done a {
+    background-color: #FFA726;
+}
+.is-problem-urgent a {
+    background-color: #EF5350;
+}
+.is-problem-critical a {
+    background-color: #AB47BC;
+}
+.is-problem-emergency a {
+    background-color: #424242;
+}
+.is-problem-no-priority a {
+    color: red;
+}
+
+.is-problem-routine a:hover,
+.is-problem-important a:hover,
+.is-problem-urgent a:hover,
+.is-problem-critical a:hover,
+.is-problem-emergency a:hover,
+.is-active a:hover,
+.is-done a:hover {
+    background-color: #321fdb;
+}
+
+/* date ellipsis */
+td.is-date,
+td.is-title-ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+
+}
+
+td.is-date {
+    width: 60px;
+    /* add padding top */
+    -ms-transform: translateY(7%);
+    -webkit-transform: translateY(7%);
+    transform: translateY(7%);
+}
+
+td.is-title-ellipsis {
+    width: 200px;
+    /* add padding top */
+    -ms-transform: translateY(7%);
+    -webkit-transform: translateY(7%);
+    transform: translateY(7%);
+}
+
+.datatable>tbody>tr>td,
+.datatable>tbody>tr>th,
+.datatable>tbody>tr {
+  border-top: none;
+  padding: 20px 10px;
+  line-height: 1.25em;
+}
+
+table.dataTable thead th {
+    padding: 10px 18px;
+    line-height: 2.5em;
+}
+
+table.dataTable thead .sorting::before,
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_asc::before,
+table.dataTable thead .sorting_asc::after,
+table.dataTable thead .sorting_desc::before,
+table.dataTable thead .sorting_desc::after,
+table.dataTable thead .sorting_asc_disabled::before,
+table.dataTable thead .sorting_asc_disabled::after,
+table.dataTable thead .sorting_desc_disabled::before,
+table.dataTable thead .sorting_desc_disabled::after {
+    bottom: .8em;
+}
+.datatable tbody tr:nth-of-type(2n+1) {
+    background-color: #fbfbfb;
+}
+
+.datatable tbody tr:nth-of-type(2n+1):hover,
+table.dataTable tbody tr:hover {
+    background-color: #f3f3f3;
+}
+
+table.dataTable thead th {
+    border-bottom: none;
+    border-top: none;
+    padding-left: 10px;
+}
+
+table.dataTable thead tr {
+    /*background-color: #ECEFF1;*/
+    background-color: #f7f8f9;
+}
+
+button.btn-fa-submit {
+    background-color: transparent;
+    border: none;
+}
+
+button.btn-fa-submit:focus {
+    outline: none;
+}
+
+/*
+html:not([dir="rtl"]) .c-sidebar-nav-dropdown-toggle span,
+html:not([dir="rtl"]) .c-sidebar-nav-link span {
+    margin-left: auto;
+}
+*/
+
+/* menu sidebar */
+.c-sidebar-nav.ps {
+    padding-bottom: 1.5rem;
+}
+
+.page-title {
+    padding-top: 1.5rem;
+}
+
+/*
+.button-actions {
+    min-width: 60px;
+}
+*/
+/*
+.card-body .datatable th:nth-child(1),
+.card-body .datatable th:nth-child(2) {
+    display: none;
+}*/
+
+/*.card-body .datatable th:nth-last-child(1) {
+    min-width: 50px;
+}*/
+
+table.dataTable.no-footer {
+    border-bottom: 0px;
+}
+
+.c-main > .container-fluid > .row > .col-lg-12 > button,
+.card-body > .dataTables_wrapper > .dt-buttons > .btn-danger,
+table.datatable th:nth-child(1),
+table.datatable td:nth-child(1),
+table.datatable th:nth-child(2),
+table.datatable td:nth-child(2),
+table.datatable-PlantAssessment th:nth-child(4),
+table.datatable-PlantAssessment td:nth-child(4),
+table.datatable-PlantAssessment th:nth-child(11),
+table.datatable-PlantAssessment td:nth-child(11),
+table.datatable-PlantAssessment th:nth-child(12),
+table.datatable-PlantAssessment td:nth-child(12),
+table.datatable-NutrientControl th:nth-child(4),
+table.datatable-NutrientControl td:nth-child(4),
+table.datatable-ModuleObservation th:nth-child(4),
+table.datatable-ModuleObservation td:nth-child(4),
+table.datatable-SiteInspection th:nth-child(4),
+table.datatable-SiteInspection td:nth-child(4),
+table.datatable-Site th:nth-child(4),
+table.datatable-Site td:nth-child(4),
+table.datatable-Module th:nth-child(4),
+table.datatable-Module td:nth-child(4),
+table.datatable-Plot th:nth-child(4),
+table.datatable-Plot td:nth-child(4),
+table.datatable-Plot th:nth-child(5),
+table.datatable-Plot td:nth-child(5),
+table.datatable-Harvest th:nth-child(4),
+table.datatable-Harvest td:nth-child(4),
+table.datatable-Packing th:nth-child(4),
+table.datatable-Packing td:nth-child(4),
+table.datatable-Distribution th:nth-child(4),
+table.datatable-Distribution td:nth-child(4),
+table.datatable-CarePreOrder th:nth-child(4),
+table.datatable-CarePreOrder td:nth-child(4),
+table.datatable-CareDistribution th:nth-child(4),
+table.datatable-CareDistribution td:nth-child(4),
+table.datatable-CareHarvest th:nth-child(4),
+table.datatable-CareHarvest td:nth-child(4),
+table.datatable-CareModule th:nth-child(4),
+table.datatable-CareModule td:nth-child(4),
+table.datatable-CareNutrientControl th:nth-child(4),
+table.datatable-CareNutrientControl td:nth-child(4),
+table.datatable-CarePacking th:nth-child(4),
+table.datatable-CarePacking td:nth-child(4),
+table.datatable-CarePlantAssessment th:nth-child(4),
+table.datatable-CarePlantAssessment td:nth-child(4),
+table.datatable-CarePurchase th:nth-child(4),
+table.datatable-CarePurchase td:nth-child(4),
+table.datatable-CareSale th:nth-child(4),
+table.datatable-CareSale td:nth-child(4),
+table.datatable-CareSite th:nth-child(4),
+table.datatable-CareSite td:nth-child(4),
+table.datatable-CashflowPurchase th:nth-child(4),
+table.datatable-CashflowPurchase td:nth-child(4),
+table.datatable-CashflowSale th:nth-child(4),
+table.datatable-CashflowSale td:nth-child(4),
+table.datatable-SalesCustomer th:nth-child(4),
+table.datatable-SalesCustomer td:nth-child(4),
+table.datatable-SalesMarket th:nth-child(4),
+table.datatable-SalesMarket td:nth-child(4),
+table.datatable-PurchaseEquipment th:nth-child(4),
+table.datatable-PurchaseEquipment td:nth-child(4),
+table.datatable-PurchaseSubstance th:nth-child(4),
+table.datatable-PurchaseSubstance td:nth-child(4),
+table.datatable-ModuleComponent th:nth-child(4),
+table.datatable-ModuleComponent td:nth-child(4) {
+    display: none;
+}
+
+table.datatable th:last-child,
+table.datatable td:last-child {
+    min-width: 110px!important;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+    border: none;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: .825rem;
+}
+
+.select2-results__option[aria-selected] {
+    padding: 5px;
+}
